@@ -1,0 +1,18 @@
+//Write a JavaScript exercise to create a variable using a user-defined name
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 4</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	var name = 'andreia';
+	var x = 120;
+	this[name] = x;
+	console.log(this[name]);
+	</script>
+
+</body>
+</html>
