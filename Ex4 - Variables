@@ -1,0 +1,23 @@
+//Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function triangleAria(){
+			let Area, x=5, y=6, z=7;
+
+			let p = (x+y+z)/2;
+			Area = Math.sqrt(p*(p-x)*(p-y)*(p-z));
+
+			console.log(A);
+		}
+
+		triangleAria();
+	</script>
+</body>
+</html>
+
