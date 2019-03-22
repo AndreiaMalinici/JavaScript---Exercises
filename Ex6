@@ -1,0 +1,25 @@
+//Write a JavaScript function that combines two lists by alternately taking elements. 
+For example: given the two lists [a, b, c] and [1, 2, 3], the function should return [a, 1, b, 2, c, 3].
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex 6</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function combine ()
+		{
+			let list1 = ["a","b","c"];
+			let list2 = ["1","2","3"];
+			let list3 = [];
+
+			for(let i=0;i<=list1.length-1;i++)
+				list3.push(list1[i], list2[i]);
+			return list3;
+		}
+
+		console.log(combine());
+	</script>
+</body>
+</html>
