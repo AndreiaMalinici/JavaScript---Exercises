@@ -1,0 +1,33 @@
+// Write a JavaScript function to get the last 'n' elements of the array. 
+If array has 6 elements and if user gives 4, it has to return last 4 elements. 
+If user gives ‘n’ which is greater than the number of elements in the array, 
+then it should return all elements.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 3</title>
+</head>
+<body>
+	<input type="number" id="userInput" />
+	<button>Submit</button>
+
+	<script type="text/javascript">
+
+		let btn = document.querySelector("button");
+		btn.addEventListener('click', lastElements);
+
+		function lastElements(){
+
+			let userInput = document.getElementById("userInput").value;
+			let a = ["a","b","c","d","e","f","g"];
+			let x = a.length - userInput;
+			for(let i=x;i<=a.length-1;i++)
+			{
+				console.log(a[i]);
+			}
+		}
+	</script>
+
+</body>
+</html>
