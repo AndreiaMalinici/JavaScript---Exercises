@@ -1,0 +1,44 @@
+//Write a JavaScript function to parse an URL and print the details like protocol, port, host, 
+query parameters and route parameters if any.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	function parseURL(href) {
+	    var location = document.createElement("a");
+	    location.href = href;
+	    if (location.host == "") {
+	      location.href = location.href;
+	    }
+	    return location;
+	};
+
+
+	var a = parseURL('http://www.here.com:8080/home/index/first?abc=rbh;hfdtd@cfs');
+	document.write("The protocol is: ");
+	document.write(a.protocol);
+	document.write("<br>");
+
+	document.write("The host is: ");
+	document.write(a.hostname);
+	document.write("<br>");
+
+	document.write("The port is: ");
+	document.write(a.port);
+	document.write("<br>");
+
+	document.write("The path is: ");
+	document.write(a.pathname);
+	document.write("<br>");
+
+	document.write("The query parameters are: ");
+	document.write(a.search);
+
+	</script>
+
+</body>
+</html>
