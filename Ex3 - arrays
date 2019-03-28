@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Topic 4</title>
+	<title>Ex3 - arrays</title>
 </head>
 <body>
 	Give the length:<input type = "number" id="first" />
