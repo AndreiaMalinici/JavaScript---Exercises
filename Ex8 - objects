@@ -1,0 +1,33 @@
+//Create a JavaScript object stores a 'CD' details.
+a. CD name
+b. CD publisher
+c. CD price
+A function 'displayAllDetails()' -->should show the CD Name, 
+CD publisher and Final Price (Final Price is calculated as 
+final price+10% tax charges and 3% discount).
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var cdDetails = {
+			CDname: "Frunza verde busuioc",
+			CDpublisher: "Andreia Malinici",
+			CDprice: 150
+		}
+
+		function displayAllDetails() {
+			console.log(cdDetails.CDname); 
+			console.log(cdDetails.CDpublisher);
+			var finalPrice = (cdDetails.CDprice + (cdDetails.CDprice*10)/100) - ((cdDetails.CDprice*3)/100);
+			console.log(finalPrice);
+
+		}
+		displayAllDetails();
+	</script>
+
+</body>
+</html>
