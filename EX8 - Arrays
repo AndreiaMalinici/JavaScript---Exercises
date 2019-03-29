@@ -1,0 +1,34 @@
+//Write a JavaScript program to sort an array of JavaScript objects. Let the object contain many keys.
+Based on a specific key, the objects are to be sorted.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 8</title>
+</head>
+<body>
+	<script type="text/javascript">
+			var array = [
+		{person:'Jason Noah', TVShow:'Love Island', Age:'42', ID:'6'},
+		{person:'Oliver Mason', TVShow:'Exatlon', Age:'32', ID:'1'},
+		{person:'Harry Liam', TVShow:'BBC News', Age:'27', ID:'2'},
+		{person:'Jacob Burden', TVShow:'BBC News', Age:'45', ID:'3'},
+		{person:'Jake William', TVShow:'Love Island', Age:'28', ID:'4'},
+		{person:'David Joseph', TVShow:'X Factor', Age:'46', ID:'5'}
+	];
+
+		function sort(x,y) 
+		 {
+		  if (x.Age < y.Age)
+		    return -1;
+		  if (x.Age > y.Age)
+		    return 1;
+		  return 0;
+		 }
+
+	console.log(array.sort(sort));
+
+	</script>
+
+</body>
+</html>
