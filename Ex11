@@ -1,0 +1,25 @@
+//Prompt the user to enter two numbers. Add the numbers and alert the sum.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 8</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function add()
+		{
+			var firstNumber = prompt("Please enter the first number:");
+			var secondNumber = prompt("Please enter the second number:");
+
+			let sum = parseInt(firstNumber) + parseInt(secondNumber);
+
+			alert(sum);
+		}
+
+		add();
+		
+	</script>
+</body>
+</html>
