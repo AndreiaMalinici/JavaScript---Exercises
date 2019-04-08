@@ -6,7 +6,7 @@ then it should return all elements.
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Topic 3</title>
+	<title>Ex7 - arrays</title>
 </head>
 <body>
 	<input type="number" id="userInput" />
