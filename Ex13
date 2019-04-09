@@ -1,0 +1,26 @@
+//Prompt the user to enter his favorite background and foreground color.
+Receive the values and apply the same as the page’s background and foreground.
+Keep prompting the user for these details until the user says no.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 8</title>
+</head>
+<body>
+	<p>Home</p>
+	<script type="text/javascript">
+		var type = 'backgroundColor';
+		test(type);
+		function test(type) {
+			var input = prompt(type);
+			if(input!="no")
+			{
+				document.body.style[type] = input;
+				type = (type === 'backgroundColor') ? 'color':'backgroundColor';
+				setTimeout(function(){test(type)}, 10);
+			}
+		}
+	</script>
+</body>
+</html>
