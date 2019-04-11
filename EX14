@@ -1,0 +1,31 @@
+//Write a JavaScript function to get the number of occurrences of a given letter in specified string. 
+Take input string as global variable and letter as local variable in a function.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 9</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var string = "jjkadjjkj";
+
+	function calculateOccurrence() {
+		var occurrence = 0;
+		var letter = "j";
+
+		for(var i=0;i<=string.length;i++)
+		{
+			if(string[i] == letter[0])
+				occurrence ++;
+
+		}
+
+		return occurrence;
+	}
+
+	console.log(calculateOccurrence());
+	</script>
+
+</body>
+</html>
