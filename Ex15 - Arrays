@@ -4,7 +4,7 @@ Define array as global variable and search element as local variable in a functi
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Topic 9</title>
+	<title>Ex15 - Arrays</title>
 </head>
 <body>
 	<script type="text/javascript">
