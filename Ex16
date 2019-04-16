@@ -5,7 +5,7 @@ Onclick of it, call a method that will prompt you to enter your donation amount 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Topic 10</title>
+	<title>Ex16</title>
 </head>
 <body>
 	<button onclick="donate()">Donate for a cause</button>
