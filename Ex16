@@ -1,0 +1,22 @@
+//Create a button called "Donate for a cause". 
+Onclick of it, call a method that will prompt you to enter your donation amount and alerts it.
+(If the donation is in decimals, it should be rounded off to the nearest integer).
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 10</title>
+</head>
+<body>
+	<button onclick="donate()">Donate for a cause</button>
+	<script type="text/javascript">
+
+		let btn = document.querySelector("button");
+		function donate() {
+			var a =prompt("Please enter the amount you want to donate:");
+			alert("The user wants to donate: " + Math.round(a) + "£");
+		}
+		
+	</script>
+</body>
+</html>
