@@ -1,0 +1,54 @@
+//Create a basic page in html that displays 3 images. 
+Create a separate rollover for each of these images, 
+i.e. onMouseOver display a new, image, onMouseOut return it to the original image.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 10</title>
+</head>
+<body>
+	<img src="./images/image2.jpg" width="150px" height="100px" onMouseOver="MouseOver(this)" onMouseOut="MouseOut(this)" />
+
+	<br>
+
+	<img src="./images/image1.jpg" width="200px" height="100px" onMouseOver="bigImg(this)" onMouseOut="normalImg(this)" />
+
+	<br>
+
+	<img src="./images/image5.jpg" width="350px" height="250px" onMouseOver="smallImg(this)" onMouseOut="norImg(this)" />
+
+
+	<script type="text/javascript">
+		function MouseOver(MyImage){
+    		MyImage.src = "./images/image2.jpg";
+		}
+
+		function MouseOut(MyImage){
+		    MyImage.src = "./images/image3.jpg";
+		}
+
+		function bigImg(SecondImage){
+			SecondImage.style.height = "250px";
+			SecondImage.style.width = "350px";
+		}
+
+		function normalImg(SecondImage){
+			SecondImage.style.height = "100px";
+			SecondImage.style.width = "200px";
+		}
+
+		function smallImg(ThirdImage){
+			ThirdImage.style.height = "100px";
+			ThirdImage.style.width = "200px";
+		}
+
+		function norImg(ThirdImage){
+			ThirdImage.style.height = "250px";
+			ThirdImage.style.width = "350px";
+		}
+
+	</script>
+
+</body>
+</html>
