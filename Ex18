@@ -8,7 +8,7 @@ visible. Conversely, when at the end, only the Previous button should be visible
 
 <html>
 <head>
-	<title>Topic 10</title>
+	<title>Ex18</title>
 </head>
 <body>
 	<img src="./images/image1.jpg" name="slideshow" style ="width: 50%"/>
