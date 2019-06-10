@@ -1,1 +1,3 @@
-jk
+
+Write a function for searching JavaScript arrays with a binary search. 
+Define array as global variable and search element as local variable in a function.
